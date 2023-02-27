@@ -1,7 +1,6 @@
 import React from "react";
 
 function Answer({chatGPTanswer, setChatGptAnswer}){
-    //devo fare il bottone per tornare indietro
     const resetChatGPTAnswer = () => {
         setChatGptAnswer({})
     }
@@ -11,7 +10,9 @@ function Answer({chatGPTanswer, setChatGptAnswer}){
             <div>
                 {chatGPTanswer}
             </div>
+            <div class="send">
             <button onClick={resetChatGPTAnswer}>Back</button>
+            </div>
         </div>
     )
 }
