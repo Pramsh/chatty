@@ -43,8 +43,8 @@ const handleSetChatGPTanswer = (answer) => {
                 <div class="container">
                     <Answer chatGPTanswer={answerChatGPT.res} setChatGptAnswer={handleSetChatGPTanswer}></Answer>
                 </div>
-            :   <form onSubmit={handleSubmit}>
-{/*                 <div class="view"> */}
+                    :   <form onSubmit={handleSubmit}>
+                <div class="view">
                         <div class = "container">
                             <div class = "inputs">
                                 <div class="flexEl" key={inputs[0]}>                                
@@ -60,8 +60,18 @@ const handleSetChatGPTanswer = (answer) => {
                             <   button id="subBtn" type="submit">Send</button>
                             </div>
                         </div>
-{/*                             <div class="kawaiiImg">A</div>     */}
-                {/* </div> */}
+                    <div class="kawaiiImg">
+                        <p>
+                        Ciao e benvenuto in ******, la prima smart app per la tua dieta personalizzata!<br></br>
+
+Sei pronto a tirare fuori il meglio dal tuo corpo? <br></br>Con l'aiuto della nostra app, potrai creare una dieta salutare che si adatta perfettamente alle tue esigenze!<br></br> Non solo, avrai anche accesso a una vasta gamma di informazioni su cibi specifici, come gli ingredienti, gli allergeni e le vitamine contenute in ogni pietanza o verdura.<br></br> In questo modo, avrai sempre le informazioni necessarie per fare scelte alimentari consapevoli e intelligenti.<br></br>
+
+Ma c'è di più! Grazie alla nostra app, avrai accesso a deliziose ricette per completare i tuoi pasti,<br></br> e la possibilità di personalizzare più di una dieta in base al rapporto di nutrienti di cui hai bisogno in un determinato periodo. <br></br>E il tutto verrà visualizzato in un comodo (e buono!) grafico a torta, per rendere ancora più facile monitorare la tua dieta.<br></br>
+
+Quindi, cosa aspetti? Non perdere altro tempo a cercare di capire cosa mangiare!<br></br> Scarica la nostra app e crea subito la tua dieta personalizzata. <br></br>Non solo ti sentirai meglio, ma otterrai anche i risultati che hai sempre desiderato.<br></br> Vieni a scoprire tutto ciò che ****** ha da offrire e unisciti alla nostra comunità di persone che hanno già migliorato la loro salute grazie alla nostra app!
+                        </p>
+                    </div>    
+                </div>
             </form>
             }
         </div>
