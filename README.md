@@ -74,3 +74,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ###Se non passi tutti i valori non parte.
+
+
+
+Dietary guidelines: You would need a set of guidelines or recommendations for a healthy diet that specifies the recommended intake of different types of foods, such as fruits, vegetables, grains, proteins, and fats. These guidelines may vary depending on factors such as age, gender, activity level, and health status.
+
+Food preferences: You could also consider individual food preferences, which may influence the percentages of different food types that people would be willing or able to eat. For example, some people may prefer to eat more plant-based foods, while others may prefer to consume more animal products.
+
+Health conditions: Some health conditions may require specific dietary modifications, such as reducing sodium or sugar intake, increasing fiber intake, or avoiding certain allergens. In such cases, the percentages of different types of foods may need to be adjusted accordingly.
+
+Cultural or regional factors: Dietary patterns may also be influenced by cultural or regional factors, such as availability of certain foods or traditional food preferences.
+
+1) Dietary guidelines:
+Age,gender,activity level, health status.
+
+2) Food preferences:
+plant-based, more animal produccts
+
+3) Health conditions:
+reducing sodium or sugar intake, increasing fiber intake, or avoid certein allergens.
+
+4) Cultural or regional factors:
+any other information about me: free answer
+

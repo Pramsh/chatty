@@ -10,7 +10,7 @@ function Answer({chatGPTanswer, setChatGptAnswer}){
             <div>
                 {chatGPTanswer}
             </div>
-            <div class="send">
+            <div className="send">
             <button onClick={resetChatGPTAnswer}>Back</button>
             </div>
         </div>

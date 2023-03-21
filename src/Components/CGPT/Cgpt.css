@@ -1,28 +1,69 @@
-/* 
-
-*/
-
-/* #root{
-    width: fit-content;
-
-    dovremmo creare un app che prende in unput un immagine e la trasforma in vettoriale
-} */
-
-
-body{
+.layout{
     background-image: linear-gradient(to left, rgb(118, 187, 252), rgb(255, 234, 217));
+    min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    
 }
+
+
+.container {
+    background-image:linear-gradient(to top, rgba(255,255, 255, 0.8),rgba(255,255,255,0.3)) ;
+    border: 2px solid rgb(187, 85, 255) ;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    padding: 2.8em;
+    border-radius: 15px;
+    flex-basis: 70%;
+    margin: 10px;
+}
+.el{
+    padding :3em;
+    flex-grow: 1;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    background-image:linear-gradient(to top, rgba(255,255, 255, 0.8),rgba(255,255,255,0.3)) ;
+    border-radius: 15px;
+    border: 2px solid rgb(187, 85, 255) ;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;   
+   flex-basis: 30%;
+   margin: 20px;
+}
+
+
+
+
+.inputs{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;   
+}
+
+
+input{
+    max-width: 250px;
+    font-size: 25px;
+    margin-bottom: 24px;
+    border: 2px solid rgb(187, 85, 255);
+    background-color:rgba(0, 0, 0, 0.12);
+}
+
 
 .send{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding : 50px;
-    margin-top:25px;
+    margin: 0 auto;
+    margin-top: 40px;
 }
+
+label{
+    margin-bottom: 10px;
+}
+
+
 button{
     border-radius: 5px;
     width: 150px;
@@ -79,50 +120,3 @@ button:hover{
     transition: 2s
 }
 
-.container , .kawaiiImg{
-    margin: 5%;
-    padding :2.5rem;
-    font-size: 25px;
-    font-family: sans-serif;
-    color: rgb(0, 0, 0);
-    background-image:linear-gradient(to top, rgba(255,255, 255, 0.8),rgba(255,255,255,0.3)) ;
-    border-radius: 15px;
-    border: 2px solid rgb(187, 85, 255) ;
-    width: 450px;
-    flex: 1;
-
-}
-
-.kawaiiImg > p{
-    font-size: 16px;
-}
-
-.inputs{
-    display: flex;
-    justify-content: center;
-}
-.textbox{
-    margin-bottom:25px ;
-}
-
-input{
-    font-size: 25px;
-    border: 2px solid rgb(187, 85, 255);
-    background-color:rgba(0, 0, 0, 0.12);
-    color: rgb(165, 244, 165);
-}
-.view{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding-top:30px;
-    padding-bottom:30px;
-    border: 2px solid rgb(187, 85, 255) ;
-    border-radius:15px;
-    margin:2.5rem;
-    width: 1340px;
-}
-
-.layout , #root , form{
-    display: flex;
-}
