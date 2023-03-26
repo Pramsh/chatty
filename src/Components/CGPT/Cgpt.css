@@ -121,3 +121,6 @@ button:hover{
     transition: 2s
 }
 
+.undefined-input{
+    border: 2px solid rgb(201, 0, 0);
+}
