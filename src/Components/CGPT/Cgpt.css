@@ -4,25 +4,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 
 .container {
-    background-image:linear-gradient(to top, rgba(255,255, 255, 0.8),rgba(255,255,255,0.3)) ;
+    background-image:linear-gradient(to top, rgba(255,255, 255, 0.8),rgba(170, 170, 170, 0.287)) ;
     border: 2px solid rgb(187, 85, 255) ;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
-    padding: 2.8em;
+    padding-top: 3%;
+    padding-bottom: 3%;
     border-radius: 15px;
     flex-basis: 70%;
     margin: 10px;
+    
 }
 .el{
     padding :3em;
     flex-grow: 1;
-    font-size: 25px;
+    font-size: 21px;
     font-family: sans-serif;
     color: rgb(0, 0, 0);
     background-image:linear-gradient(to top, rgba(255,255, 255, 0.8),rgba(255,255,255,0.3)) ;
