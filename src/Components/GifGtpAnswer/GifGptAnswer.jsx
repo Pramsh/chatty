@@ -3,7 +3,7 @@ import React from "react";
 function GifGptAnswer(){
     return(
         <div>
-            <img src="/assets/answer_loading.gif" alt="Loading..." />
+            <img src="/assets/leoncino.gif" alt="Loading..."  width="300" height="300"></img>
         </div>
     )
 }

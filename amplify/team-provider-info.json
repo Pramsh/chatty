@@ -15,7 +15,7 @@
       "function": {
         "myLamAPIFunc": {
           "deploymentBucketName": "amplify-emailgen-dev-231211-deployment",
-          "s3Key": "amplify-builds/myLamAPIFunc-7463634b52415475464b-build.zip"
+          "s3Key": "amplify-builds/myLamAPIFunc-754e59496a4131423276-build.zip"
         }
       },
       "api": {
