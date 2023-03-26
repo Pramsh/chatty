@@ -60,8 +60,7 @@ app.post('/egen', async function(req, res) {
     if(question){
       const answer = await GPTQuestion(question,gptKey)
       res.status(201).send({
-        res:answer,
-        req:question
+        res:answer
       })
     }
   } catch (error) {
