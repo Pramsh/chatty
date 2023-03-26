@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import fetch from 'isomorphic-fetch';
 import Answer from "../Answer/Answer";
 import GifGptAnswer from "../GifGtpAnswer/GifGptAnswer";
+import { API } from 'aws-amplify';
 import './Cgpt.css';
 function Cgpt(){
     const introductionText = `Introducing "MailGen", the ultimate email generation app designed to simplify your communication process and save you time. Whether you're sending out newsletters, sales pitches, or simply following up with clients, MailGen has got you covered.`
@@ -13,33 +13,26 @@ function Cgpt(){
         const { name, value } = e.target;
         setInputValues({ ...inputValues, [name]: value });
         }
-      
         
+      
     const handleSubmit = async(e) => {
-       e.preventDefault();
-       setLoading(true)
-       console.log(inputValues);
-        // send data to API using fetch or axios
-       fetch('http://localhost:3100/question', {
-        method: 'POST',
-        body: JSON.stringify(inputValues),
-        headers: {
-        'Content-Type': 'application/json'
-        }
-        })
-       .then((data)=> {
-           return data.json()
-        }).then((res) =>{
+        try {
+            e.preventDefault();
+            setLoading(true)     
+            const res = await API.post('EmailGen', '/egen', {
+             headers: {
+               'Content-Type': 'application/json',//prova a rimettere il then
+             },
+             body: inputValues
+           })
             setLoading(false)
-            console.log("hitted", res, isLoading);
             setAnserChatGPT(res)
-        }).catch((e) => {
-            console.log(e);
-        })
-        // const data = await res.json().catch((Err) => console.log(Err))
-        // console.log(data);
-        // setAnserChatGPT(data)
+            return res
+        } catch (error) {
+            console.log(error);    
+        }
 }
+
 const handleSetChatGPTanswer = (answer) => {
     setAnserChatGPT(answer);
     setInputValues({})
@@ -68,7 +61,7 @@ const handleSetChatGPTanswer = (answer) => {
                                                 <input type="checkbox" name={"formal"} placeholder={asciiArt[4]} onChange={handleInputChange} />
                                                 
                                         <div className ="send">
-                                            <button id="subBtn" type="submit" disabled={isLoading}>Send</button>
+                                            <button id="subBtn" type="submit" onClick={handleSubmit} disabled={isLoading}>Send</button>
                                             
                                         </div>
                                     </div>

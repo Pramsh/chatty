@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/egen": {
+      "name": "/egen",
+      "lambdaFunction": "myLamAPIFunc",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

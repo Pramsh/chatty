@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-emailgen-dev-231211-authRole",
+      "UnauthRoleArn": "arn:aws:iam::672513397456:role/amplify-emailgen-dev-231211-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::672513397456:role/amplify-emailgen-dev-231211-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-emailgen-dev-231211-deployment",
+      "UnauthRoleName": "amplify-emailgen-dev-231211-unauthRole",
+      "StackName": "amplify-emailgen-dev-231211",
+      "StackId": "arn:aws:cloudformation:eu-central-1:672513397456:stack/amplify-emailgen-dev-231211/6deeecb0-c835-11ed-b0f0-0ae7941bf2a8",
+      "AmplifyAppId": "d1xfxtbohlv6ya"
+    },
+    "categories": {
+      "function": {
+        "myLamAPIFunc": {
+          "deploymentBucketName": "amplify-emailgen-dev-231211-deployment",
+          "s3Key": "amplify-builds/myLamAPIFunc-6e352b7a557435483778-build.zip"
+        }
+      },
+      "api": {
+        "EmailGen": {}
+      }
+    }
+  }
+}
