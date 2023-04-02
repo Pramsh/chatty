@@ -8,26 +8,25 @@
 
 
 .container {
-    background-image:linear-gradient(to top, rgba(255,255, 255, 0.8),rgba(170, 170, 170, 0.287)) ;
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8),rgba(170, 170, 170, 0.287)) ;
     border: 2px solid rgb(187, 85, 255) ;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
     padding-top: 3%;
     padding-bottom: 3%;
-    border-radius: 15px;
+    border-radius: 5px;
     flex-basis: 70%;
     margin: 10px;
-    
 }
 .el{
-    padding :3em;
+    padding :2em;
     flex-grow: 1;
     font-size: 21px;
     font-family: sans-serif;
     color: rgb(0, 0, 0);
     background-image:linear-gradient(to top, rgba(255,255, 255, 0.8),rgba(255,255,255,0.3)) ;
-    border-radius: 15px;
+    border-radius: 5px;
     border: 2px solid rgb(187, 85, 255) ;
    display: flex;
    justify-content: space-between;
